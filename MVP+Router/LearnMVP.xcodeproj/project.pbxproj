@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		E3B344B7208EBFBF0076E101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344B6208EBFBF0076E101 /* AppDelegate.swift */; };
-		E3B344B9208EBFBF0076E101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344B8208EBFBF0076E101 /* ViewController.swift */; };
-		E3B344BC208EBFBF0076E101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B344BA208EBFBF0076E101 /* Main.storyboard */; };
+		E3B344B9208EBFBF0076E101 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344B8208EBFBF0076E101 /* BookListViewController.swift */; };
 		E3B344BE208EBFC10076E101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B344BD208EBFC10076E101 /* Assets.xcassets */; };
-		E3B344C1208EBFC10076E101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B344BF208EBFC10076E101 /* LaunchScreen.storyboard */; };
+		E3B344CB208EC9930076E101 /* BookListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344CA208EC9930076E101 /* BookListRouter.swift */; };
+		E3B344D3208ECA660076E101 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344D2208ECA660076E101 /* Book.swift */; };
+		E3B344D6208ECED20076E101 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344D5208ECED20076E101 /* AppRouter.swift */; };
+		E3B344D9208ED1590076E101 /* BookListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344D8208ED1590076E101 /* BookListPresenter.swift */; };
+		E3B344E1208ED4BA0076E101 /* BookListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344E0208ED4BA0076E101 /* BookListModel.swift */; };
+		E3B344E3208EEB540076E101 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344E2208EEB540076E101 /* BookListView.swift */; };
+		E3B344E5208EF2D20076E101 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344E4208EF2D20076E101 /* BookListTableViewCell.swift */; };
+		E3B344E8208EF3120076E101 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344E7208EF3120076E101 /* UITableViewCellExtension.swift */; };
+		E3B344EB208EF7FA0076E101 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344EA208EF7FA0076E101 /* BookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3B344B3208EBFBF0076E101 /* LearnMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B344B6208EBFBF0076E101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3B344B8208EBFBF0076E101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3B344BB208EBFBF0076E101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3B344B8208EBFBF0076E101 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		E3B344BD208EBFC10076E101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3B344C0208EBFC10076E101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B344C2208EBFC10076E101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B344CA208EC9930076E101 /* BookListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListRouter.swift; sourceTree = "<group>"; };
+		E3B344D2208ECA660076E101 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		E3B344D5208ECED20076E101 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E3B344D8208ED1590076E101 /* BookListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListPresenter.swift; sourceTree = "<group>"; };
+		E3B344E0208ED4BA0076E101 /* BookListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModel.swift; sourceTree = "<group>"; };
+		E3B344E2208EEB540076E101 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		E3B344E4208EF2D20076E101 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		E3B344E7208EF3120076E101 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		E3B344EA208EF7FA0076E101 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,117 @@
 		E3B344B5208EBFBF0076E101 /* LearnMVP */ = {
 			isa = PBXGroup;
 			children = (
+				E3B344E6208EF2F90076E101 /* Extension */,
+				E3B344DE208ED4840076E101 /* Entity */,
+				E3B344CE208ECA010076E101 /* Model */,
+				E3B344CF208ECA090076E101 /* View */,
+				E3B344CD208EC9F50076E101 /* Presenter */,
+				E3B344CC208EC9EB0076E101 /* Router */,
 				E3B344B6208EBFBF0076E101 /* AppDelegate.swift */,
-				E3B344B8208EBFBF0076E101 /* ViewController.swift */,
-				E3B344BA208EBFBF0076E101 /* Main.storyboard */,
 				E3B344BD208EBFC10076E101 /* Assets.xcassets */,
-				E3B344BF208EBFC10076E101 /* LaunchScreen.storyboard */,
 				E3B344C2208EBFC10076E101 /* Info.plist */,
 			);
 			path = LearnMVP;
+			sourceTree = "<group>";
+		};
+		E3B344CC208EC9EB0076E101 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344D4208ECE350076E101 /* App */,
+				E3B344D0208ECA340076E101 /* BookList */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E3B344CD208EC9F50076E101 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344D7208ED1460076E101 /* BookList */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E3B344CE208ECA010076E101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344DF208ED4AE0076E101 /* BookList */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3B344CF208ECA090076E101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344D1208ECA430076E101 /* BookList */,
+				E3B344E9208EF7E00076E101 /* BookDetail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3B344D0208ECA340076E101 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344CA208EC9930076E101 /* BookListRouter.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		E3B344D1208ECA430076E101 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344E2208EEB540076E101 /* BookListView.swift */,
+				E3B344B8208EBFBF0076E101 /* BookListViewController.swift */,
+				E3B344E4208EF2D20076E101 /* BookListTableViewCell.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		E3B344D4208ECE350076E101 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344D5208ECED20076E101 /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E3B344D7208ED1460076E101 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344D8208ED1590076E101 /* BookListPresenter.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		E3B344DE208ED4840076E101 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344D2208ECA660076E101 /* Book.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E3B344DF208ED4AE0076E101 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344E0208ED4BA0076E101 /* BookListModel.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		E3B344E6208EF2F90076E101 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344E7208EF3120076E101 /* UITableViewCellExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E3B344E9208EF7E00076E101 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E3B344EA208EF7FA0076E101 /* BookDetailViewController.swift */,
+			);
+			path = BookDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B344C1208EBFC10076E101 /* LaunchScreen.storyboard in Resources */,
 				E3B344BE208EBFC10076E101 /* Assets.xcassets in Resources */,
-				E3B344BC208EBFBF0076E101 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +250,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B344B9208EBFBF0076E101 /* ViewController.swift in Sources */,
+				E3B344D3208ECA660076E101 /* Book.swift in Sources */,
+				E3B344D9208ED1590076E101 /* BookListPresenter.swift in Sources */,
+				E3B344CB208EC9930076E101 /* BookListRouter.swift in Sources */,
+				E3B344B9208EBFBF0076E101 /* BookListViewController.swift in Sources */,
+				E3B344EB208EF7FA0076E101 /* BookDetailViewController.swift in Sources */,
+				E3B344E5208EF2D20076E101 /* BookListTableViewCell.swift in Sources */,
+				E3B344D6208ECED20076E101 /* AppRouter.swift in Sources */,
+				E3B344E1208ED4BA0076E101 /* BookListModel.swift in Sources */,
+				E3B344E8208EF3120076E101 /* UITableViewCellExtension.swift in Sources */,
 				E3B344B7208EBFBF0076E101 /* AppDelegate.swift in Sources */,
+				E3B344E3208EEB540076E101 /* BookListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E3B344BA208EBFBF0076E101 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3B344BB208EBFBF0076E101 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E3B344BF208EBFC10076E101 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3B344C0208EBFC10076E101 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E3B344C3208EBFC10076E101 /* Debug */ = {
@@ -281,7 +386,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2C2WD8HH;
 				INFOPLIST_FILE = LearnMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +405,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2C2WD8HH;
 				INFOPLIST_FILE = LearnMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
