@@ -21,6 +21,8 @@ class BookListRouterIMP: BookListRouter {
     
     func showBookDetail(book: Book) {
         let vc = BookDetailViewController()
+        let config = BookDetailViewConfig(book: book)
+        vc.config = config
         mNavigator?.pushViewController(vc, animated: true)
     }
 }

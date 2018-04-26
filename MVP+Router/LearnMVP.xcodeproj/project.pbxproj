@@ -19,6 +19,9 @@
 		E3B344E5208EF2D20076E101 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344E4208EF2D20076E101 /* BookListTableViewCell.swift */; };
 		E3B344E8208EF3120076E101 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344E7208EF3120076E101 /* UITableViewCellExtension.swift */; };
 		E3B344EB208EF7FA0076E101 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344EA208EF7FA0076E101 /* BookDetailViewController.swift */; };
+		E3B344ED208F0B860076E101 /* BookDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344EC208F0B860076E101 /* BookDetailPresenter.swift */; };
+		E3B344EF208F0C290076E101 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344EE208F0C290076E101 /* BookDetailView.swift */; };
+		E3B344F1208F0E5E0076E101 /* BookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B344F0208F0E5E0076E101 /* BookDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E3B344E4208EF2D20076E101 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
 		E3B344E7208EF3120076E101 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		E3B344EA208EF7FA0076E101 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		E3B344EC208F0B860076E101 /* BookDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailPresenter.swift; sourceTree = "<group>"; };
+		E3B344EE208F0C290076E101 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		E3B344F0208F0E5E0076E101 /* BookDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +90,8 @@
 		E3B344CC208EC9EB0076E101 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E3B344D4208ECE350076E101 /* App */,
-				E3B344D0208ECA340076E101 /* BookList */,
+				E3B344D5208ECED20076E101 /* AppRouter.swift */,
+				E3B344CA208EC9930076E101 /* BookListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -93,7 +99,8 @@
 		E3B344CD208EC9F50076E101 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E3B344D7208ED1460076E101 /* BookList */,
+				E3B344D8208ED1590076E101 /* BookListPresenter.swift */,
+				E3B344EC208F0B860076E101 /* BookDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -101,7 +108,8 @@
 		E3B344CE208ECA010076E101 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E3B344DF208ED4AE0076E101 /* BookList */,
+				E3B344E0208ED4BA0076E101 /* BookListModel.swift */,
+				E3B344F0208F0E5E0076E101 /* BookDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,14 +123,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E3B344D0208ECA340076E101 /* BookList */ = {
-			isa = PBXGroup;
-			children = (
-				E3B344CA208EC9930076E101 /* BookListRouter.swift */,
-			);
-			path = BookList;
-			sourceTree = "<group>";
-		};
 		E3B344D1208ECA430076E101 /* BookList */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,36 +133,12 @@
 			path = BookList;
 			sourceTree = "<group>";
 		};
-		E3B344D4208ECE350076E101 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				E3B344D5208ECED20076E101 /* AppRouter.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		E3B344D7208ED1460076E101 /* BookList */ = {
-			isa = PBXGroup;
-			children = (
-				E3B344D8208ED1590076E101 /* BookListPresenter.swift */,
-			);
-			path = BookList;
-			sourceTree = "<group>";
-		};
 		E3B344DE208ED4840076E101 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				E3B344D2208ECA660076E101 /* Book.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		E3B344DF208ED4AE0076E101 /* BookList */ = {
-			isa = PBXGroup;
-			children = (
-				E3B344E0208ED4BA0076E101 /* BookListModel.swift */,
-			);
-			path = BookList;
 			sourceTree = "<group>";
 		};
 		E3B344E6208EF2F90076E101 /* Extension */ = {
@@ -176,6 +152,7 @@
 		E3B344E9208EF7E00076E101 /* BookDetail */ = {
 			isa = PBXGroup;
 			children = (
+				E3B344EE208F0C290076E101 /* BookDetailView.swift */,
 				E3B344EA208EF7FA0076E101 /* BookDetailViewController.swift */,
 			);
 			path = BookDetail;
@@ -252,14 +229,17 @@
 			files = (
 				E3B344D3208ECA660076E101 /* Book.swift in Sources */,
 				E3B344D9208ED1590076E101 /* BookListPresenter.swift in Sources */,
+				E3B344ED208F0B860076E101 /* BookDetailPresenter.swift in Sources */,
 				E3B344CB208EC9930076E101 /* BookListRouter.swift in Sources */,
 				E3B344B9208EBFBF0076E101 /* BookListViewController.swift in Sources */,
+				E3B344F1208F0E5E0076E101 /* BookDetailModel.swift in Sources */,
 				E3B344EB208EF7FA0076E101 /* BookDetailViewController.swift in Sources */,
 				E3B344E5208EF2D20076E101 /* BookListTableViewCell.swift in Sources */,
 				E3B344D6208ECED20076E101 /* AppRouter.swift in Sources */,
 				E3B344E1208ED4BA0076E101 /* BookListModel.swift in Sources */,
 				E3B344E8208EF3120076E101 /* UITableViewCellExtension.swift in Sources */,
 				E3B344B7208EBFBF0076E101 /* AppDelegate.swift in Sources */,
+				E3B344EF208F0C290076E101 /* BookDetailView.swift in Sources */,
 				E3B344E3208EEB540076E101 /* BookListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

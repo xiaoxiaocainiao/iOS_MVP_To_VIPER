@@ -18,12 +18,12 @@ protocol BookListPresenter {
 class BookListPresenterIMP: BookListPresenter {
     
     private let mModel: BookListModel
-    private let mView: BookListView
+    private weak var mView: BookListView?
     private let mRouter: BookListRouter
     
     //MARK: - initialization
     
-    init(view:BookListView, model: BookListModel, router: BookListRouter) {
+    init(view: BookListView, model: BookListModel, router: BookListRouter) {
         mModel = model
         mView = view
         mRouter = router
@@ -34,7 +34,7 @@ class BookListPresenterIMP: BookListPresenter {
     func refreshData() {
         mModel.getBooks()
         DispatchQueue.main.async {
-            self.mView.loadDataSuccess()
+            self.mView?.loadDataSuccess()
         }
     }
     

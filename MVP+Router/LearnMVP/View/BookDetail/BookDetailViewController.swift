@@ -8,15 +8,32 @@
 
 import UIKit
 
-class BookDetailViewController: UIViewController {
+struct BookDetailViewConfig {
+    let book: Book
+}
+
+class BookDetailViewController: UIViewController, BookDetailView {
+    
+    var config: BookDetailViewConfig?
+    
+    private var presenter: BookDetailPresenter?
+    
+    private let bookNameLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.title = "图书详情"
-        view.backgroundColor = UIColor.brown
+        setupUI()
+        
+        setupPresenter()
+        
+        presenter?.showBook()
+    }
+    
+    deinit {
+        print("BookDetailViewController 销毁. \(String(describing: bookNameLabel.text))")
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,15 +41,29 @@ class BookDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func setupUI() {
+        self.title = "图书详情"
+        view.backgroundColor = UIColor.brown
+        
+        view.addSubview(bookNameLabel)
+        bookNameLabel.frame = CGRect(x: 100, y: 250, width: 200, height: 50)
+        bookNameLabel.textColor = UIColor.white
+        bookNameLabel.backgroundColor = UIColor.green
     }
-    */
+    
+    private func setupPresenter() {
+        guard let bookValue = config?.book else {
+            print("config 不存在, 初始化失败.")
+            return
+        }
+        let model = BookDetailModel(book: bookValue)
+        presenter = BookDetailPresenterIMP(view: self, model: model)
+    }
+    
+    //MARK: - BookDetailView
+    
+    func showBook(bookName: String) {
+        bookNameLabel.text = bookName
+    }
 
 }
